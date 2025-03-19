@@ -80,6 +80,7 @@ body{
     margin: 0 auto;
     font-family: inter;
     background-color: var(--Lavender);
+    line-height: 1.5;
 }
 
 p{
@@ -90,6 +91,7 @@ p{
 nav>h2{
     font-family: inter;
     font-size: 1.5em;
+    text-align: center;
     font-weight: bold;
     color: var(--Dark-gray);
     text-transform: uppercase;
@@ -104,13 +106,16 @@ h2{
 }
 
 h3{
+    font-family: inter;
     font-size: 1.5em;
+    font-weight: bold;
     text-align: left;
     padding: 0 0 1rem 1rem;
     color: var(--Yellow);
 }
 
 h4{
+    font-family: inter;
     font-size: 1.15em;
     font-weight: bold;
     color: var(--Purple);
@@ -133,6 +138,7 @@ nav{
     background-color: var(--Yellow);
     width: 450px;
     padding-top: 1rem;
+    align-items: center;
     
 }
 nav li{
@@ -154,21 +160,48 @@ main{
 }
 
 #services > div img {
-    width: 50px; 
+    width: 100px; 
     height: auto; 
     flex-shrink: 0; 
 }
 
 
-#services>div{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+#services > div {
     background-color: var(--White);
     padding: 1rem;
-    margin: 2rem;
-    border-radius: 8px;
+    margin: 0 2rem 2rem 2rem;
+    border-radius: 8px; 
+    display: flex; 
+    flex-direction: column; 
     gap: 10px;
-
 }
+
+#about{
+    padding-top: 2rem;
+    background-color: var(--Pink);
+    color: var(--White);
+}
+
+#about > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 2rem 2rem 2rem;
+    align-items: center;
+    color: var(--Dark-gray);
+}
+
+#about > ul > li{
+    padding: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 24px;
+}
+
+#about > ul > li:nth-child(1) { background-color: var(--Teal); }
+#about > ul > li:nth-child(2) { background-color: var(--Lavender); }
+#about > ul > li:nth-child(3) { background-color: var(--Yellow); }
+#about > ul > li:nth-child(4) { background-color: var(--White); }
+
 
