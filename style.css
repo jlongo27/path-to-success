@@ -263,6 +263,23 @@ main{
     border: 4px solid var(--White);
     outline: none;
     font-size: 1.25rem;
+    box-shadow: -3px 3px 7px var(--Dark-gray);
 
 }
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+    align-items: center; 
+    padding: 2rem 0;
+    background-color: var(--Purple);
+}
+
+footer p, a{
+    color: var(--White);
+}
+
+
+
 
