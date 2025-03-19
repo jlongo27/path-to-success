@@ -85,25 +85,35 @@ body{
 p{
     max-width: 55ch;
     margin: 0 auto;
+    color: var(--Dark-gray);
 }
 nav>h2{
     font-family: inter;
     font-size: 1.5em;
     font-weight: bold;
     color: var(--Dark-gray);
+    text-transform: uppercase;
 }
 
 h2{
     font-family: kavoon;
     font-size: 2em;
+    color: var(--White);
+    text-align: left;
+    padding: 0 0 0.5rem 1rem;
 }
 
 h3{
     font-size: 1.5em;
+    text-align: left;
+    padding: 0 0 1rem 1rem;
+    color: var(--Yellow);
 }
 
 h4{
     font-size: 1.15em;
+    font-weight: bold;
+    color: var(--Purple);
 }
 
 header{
@@ -135,9 +145,30 @@ nav a{
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
+    color: var(--Purple);
+    text-transform: uppercase;
 }
 
 main{
     background-color: var(--Purple);
+}
+
+#services > div img {
+    width: 50px; 
+    height: auto; 
+    flex-shrink: 0; 
+}
+
+
+#services>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: var(--White);
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 8px;
+    gap: 10px;
+
 }
 
