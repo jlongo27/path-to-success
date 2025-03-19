@@ -87,6 +87,7 @@ p{
     max-width: 55ch;
     margin: 0 auto;
     color: var(--Dark-gray);
+    font-size: 1rem;
 }
 nav>h2{
     font-family: inter;
@@ -132,6 +133,8 @@ header{
 }
 header>p{
     padding: 1rem 0 2rem 0;
+    color: var(--White);
+    font-style: italic;
 }
 
 nav{
@@ -170,7 +173,7 @@ main{
     background-color: var(--White);
     padding: 1rem;
     margin: 0 2rem 2rem 2rem;
-    border-radius: 8px; 
+    border-radius: 24px; 
     display: flex; 
     flex-direction: column; 
     gap: 10px;
@@ -192,11 +195,12 @@ main{
 }
 
 #about > ul > li{
-    padding: 2rem;
+    padding: 1.5rem;
     font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
     border-radius: 24px;
+    margin: 0 auto;
 }
 
 #about > ul > li:nth-child(1) { background-color: var(--Teal); }
@@ -204,4 +208,39 @@ main{
 #about > ul > li:nth-child(3) { background-color: var(--Yellow); }
 #about > ul > li:nth-child(4) { background-color: var(--White); }
 
+#prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+#prices table{
+    border: 1px solid var(--Yellow);
+    margin: 0 auto;
+    align-items: center;
+    color: var(--Dark-gray);
+}
+
+#prices th{
+    align-items: center;
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid var(--Yellow);
+    background-color: var(--Yellow);
+
+}
+
+#prices td{
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid var(--Yellow);
+    background-color: var(--White);
+    
+}
+
+#prices h3{
+    margin-top: 1rem;
+}
 
